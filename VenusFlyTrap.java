@@ -1,8 +1,8 @@
 //Raajih Roland
 //9/25/2024
 
-public class VenusFlyTrap extends Plantae{
-    private int avgSize;
+public class VenusFlyTrap extends Plantae implements CanEatAnt{
+    private double avgSize;
 
     /**
      * Constructor that calls superclass's contstructor then initializes avgSize
@@ -16,7 +16,7 @@ public class VenusFlyTrap extends Plantae{
      * @param isExtinct true if extinct, false if not
      * @param avgSize average size of trap
      */
-    public VenusFlyTrap (String division, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct, int avgSize)
+    public VenusFlyTrap (String division, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct, double avgSize)
     {
         super(division, className, order, family, genus, species, organismName, isExtinct);
         this.avgSize = avgSize;
@@ -26,14 +26,14 @@ public class VenusFlyTrap extends Plantae{
      * getter for avgSize
      * @return avgSize
      */
-    public int getAvgSize()
+    public double getAvgSize()
     { return avgSize; }
 
     /**
      * setter for avgSize
      * @param avgSize
      */
-    public void setAvgSize(int avgSize)
+    public void setAvgSize(double avgSize)
     { this.avgSize = avgSize; }
 
     public String toString()
@@ -42,5 +42,16 @@ public class VenusFlyTrap extends Plantae{
         output += "Average trap size: " + avgSize + "\n";
 
         return output;
+    }
+
+    /**
+     * method for venus fly trap to eat an ant
+     * @Override
+     * @param ant to be eaten
+     */
+    public void eatAnt(Ant ant)
+    {
+        System.out.println(this.getOrganismName() + " is eating the ant named " + ant.getOrganismName());
+        System.out.println("\nThe circle of life...\n");
     }
 }

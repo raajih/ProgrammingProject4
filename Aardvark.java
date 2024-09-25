@@ -1,7 +1,7 @@
 //Raajih Roland
 //9/25/2024
 
-public class Aardvark extends Animalia{
+public class Aardvark extends Animalia implements CanEatAnt{
     private String habitat;
 
     /**
@@ -46,6 +46,17 @@ public class Aardvark extends Animalia{
         output += "Habitat: " + habitat + "\n";
 
         return output;
+    }
+
+    /**
+     * method for aardvark to eat ant
+     * @Override
+     * @param ant to be eaten
+     */
+    public void eatAnt(Ant ant)
+    {
+        System.out.println(this.getOrganismName() + " is eating the ant named " + ant.getOrganismName());
+        System.out.println("\nThe circle of life...\n");
     }
 
 

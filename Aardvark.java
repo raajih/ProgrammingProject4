@@ -53,10 +53,11 @@ public class Aardvark extends Animalia implements CanEatAnt{
      * @Override
      * @param ant to be eaten
      */
-    public void eatAnt(Ant ant)
+    public String eatAnt(Ant ant)
     {
-        System.out.println(this.getOrganismName() + " is eating the ant named " + ant.getOrganismName());
-        System.out.println("\nThe circle of life...\n");
+        String output = this.getOrganismName() + " is eating the ant named " + ant.getOrganismName();
+        output += ".\nThe circle of life...\n";
+        return output;
     }
 
 

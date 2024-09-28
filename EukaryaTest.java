@@ -1,3 +1,6 @@
+//Raajih Roland
+//Programming Project 4
+//9/28/2024
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -22,12 +25,13 @@ public class EukaryaTest {
      public void testAardvark()
      {
         //Aardvark tests.
-        Aardvark testAardvark = new Aardvark("phylum", "class", "order", "family", "genus", "species", "Arty the aardvark", true, "Dessert");
+        Aardvark testAardvark = new Aardvark("phylum", "class", "order", "family", "genus", "species", "Arty the aardvark", true, "Desert");
         //Ant to be eaten.
         Ant lunchAnt = new Ant("antPhylum", "antClass", "antOrder", "antFamily", "antGenus", "antSpecies", "deadAnt", false, "worker");
 
         
         assertEquals("Arty the aardvark", testAardvark.getOrganismName());
+        assertEquals("Desert", testAardvark.getHabitat());
         assertEquals("Arty the aardvark is eating the ant named deadAnt.\nThe circle of life...\n", testAardvark.eatAnt(lunchAnt));
 
      }

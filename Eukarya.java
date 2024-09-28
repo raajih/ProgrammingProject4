@@ -1,4 +1,5 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public abstract class Eukarya{
@@ -12,13 +13,13 @@ public abstract class Eukarya{
 
    /**
     * Describes an organism in eukarya domain
-    @param className name of the class
-    @param order name of the order
-    @param family name of the family
-    @param genus name of the genus
-    @param species name of the species
-    @param organismName name of the specific organism
-    @param isExtinct whether or not the animal is extinct
+    @param className Name of the class.
+    @param order Name of the order.
+    @param family Name of the family.
+    @param genus Name of the genus.
+    @param species Name of the species.
+    @param organismName Name of the specific organism.
+    @param isExtinct Whether or not the animal is extinct.
     */
     public Eukarya (String className, String order, String family, String genus, String species, String organismName, boolean isExtinct)
     {
@@ -32,105 +33,105 @@ public abstract class Eukarya{
     }
 
     /**
-     * Getter for className
-     * @return ClassName
+     * Getter for className.
+     * @return ClassName.
      */
     public String getClassName()
     { return className;}
 
     /**
-     * setter for className
-     * @param className sets the className to this value
+     * Setter for className.
+     * @param className Sets the className to this value.
      */
     public void setClassName(String className)
     { this.className = className; }
 
     /**
-     * getter for order
-     * @return order
+     * Getter for order.
+     * @return order.
      */
     public String getOrder()
     { return order; }
 
     /**
-     * setter for order
-     * @param order the order name to set
+     * Setter for order.
+     * @param order the order name to set.
      */
     public void setOrder(String order)
     { this.order = order; }
 
     /**
-     * getter for family
-     * @return family
+     * Getter for family.
+     * @return family.
      */
     public String getFamily()
     { return family; }
 
     /**
-     * setter for family
-     * @param family the family name to be set
+     * Setter for family.
+     * @param family the family name to be set.
      */
     public void setFamily(String family)
     { this.family = family; }
 
     /**
-     * getter for genus
-     * @return genus
+     * Getter for genus.
+     * @return genus.
      */
     public String getGenus()
     { return genus; }
 
     /**
-     * setter for genus
+     * Setter for genus.
      * @param genus
      */
     public void setGenus(String genus)
     { this.genus = genus; }
 
     /**
-     * getter for species
-     * @return species
+     * Setter for species.
+     * @return species.
      */
     public String getSpecies()
     { return species; }
 
     /**
-     * setter for species
-     * @param species name to be set
+     * Setter for species.
+     * @param species name to be set.
      */
     public void setSpecies(String species)
     { this.species = species; }
 
     /**
-     * getter for organismName
-     * @return organismName
+     * Getter for organismName.
+     * @return organismName.
      */
     public String getOrganismName()
     { return organismName; }
 
     /**
-     * setter for organismName
-     * @param organismName
+     * Setter for organismName.
+     * @param organismName.
      */
     public void setOrganismName(String organismName)
     { this.organismName = organismName; }
 
     /**
-     * getter for isExtinct
-     * @return isExtinct
+     * Getter for isExtinct.
+     * @return isExtinct.
      */
     public boolean getIsExtinct()
     { return isExtinct; }
 
     /**
-     * setter for isExtinct
-     * @param isExtinct
+     * Setter for isExtinct.
+     * @param isExtinct.
      */
     public void setIsExtinct(boolean isExtinct)
     { this.isExtinct = isExtinct; }
 
     /**
-     * @return output is all of the attributes put into a string
+     * @return output is all of the attributes put into a string.
      */
     public String toString()
     {

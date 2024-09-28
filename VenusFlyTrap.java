@@ -1,4 +1,5 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public class VenusFlyTrap extends Plantae implements CanEatAnt{
@@ -6,15 +7,15 @@ public class VenusFlyTrap extends Plantae implements CanEatAnt{
 
     /**
      * Constructor that calls superclass's contstructor then initializes avgSize
-     * @param division name of division
-     * @param className name of the class
-     * @param order name of the order
-     * @param family name of the family
-     * @param genus name of the genus
-     * @param species name of the species
-     * @param organismName name of the organism
-     * @param isExtinct true if extinct, false if not
-     * @param avgSize average size of trap
+     * @param division Name of division.
+     * @param className Name of the class.
+     * @param order Name of the order.
+     * @param family Name of the family.
+     * @param genus Name of the genus.
+     * @param species Name of the species.
+     * @param organismName Name of the organism.
+     * @param isExtinct True if extinct, false if not.
+     * @param avgSize Average size of trap in inches.
      */
     public VenusFlyTrap (String division, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct, double avgSize)
     {
@@ -23,15 +24,15 @@ public class VenusFlyTrap extends Plantae implements CanEatAnt{
     }
 
     /**
-     * getter for avgSize
-     * @return avgSize
+     * Getter for avgSize.
+     * @return avgSize.
      */
     public double getAvgSize()
     { return avgSize; }
 
     /**
-     * setter for avgSize
-     * @param avgSize
+     * Setter for avgSize.
+     * @param avgSize.
      */
     public void setAvgSize(double avgSize)
     { this.avgSize = avgSize; }
@@ -45,9 +46,9 @@ public class VenusFlyTrap extends Plantae implements CanEatAnt{
     }
 
     /**
-     * method for venus fly trap to eat an ant
+     * Method for venus fly trap to eat an ant.
      * @Override
-     * @param ant to be eaten
+     * @param ant to be eaten.
      */
     public String eatAnt(Ant ant)
     {

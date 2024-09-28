@@ -1,4 +1,5 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public class Ant extends Animalia {
@@ -6,15 +7,15 @@ public class Ant extends Animalia {
 
     /**
      * Calls superclass constructor then initializes job
-     * @param phylum
-     * @param className
-     * @param order
-     * @param family
-     * @param genus
-     * @param species
-     * @param organismName
-     * @param isExtinct
-     * @param job
+     * @param phylum Name of ant phylum.
+     * @param className Name of the ant class.
+     * @param order Name of the ant order.
+     * @param family Name of the ant family.
+     * @param genus Name of the ant genus.
+     * @param species Name of the ant species.
+     * @param organismName Name of the ant.
+     * @param isExtinct True if ant is extinct, false if not.
+     * @param job The job of the ant (string)..
      */
     public Ant(String phylum, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct, String job)
     {
@@ -23,22 +24,22 @@ public class Ant extends Animalia {
     }
 
     /**
-     * getter for job
-     * @return job
+     * Getter for job.
+     * @return job of the ant.
      */
     public String getJob()
     { return job; }
 
     /**
-     * setter for job
+     * Setter for job.
      * @param job
      */
     public void setJob(String job)
     { this.job = job; }
 
     /**
-     * outputs all attributes as a string
-     * @return output
+     * Outputs all attributes as a string.
+     * @return output.
      */
     public String toString()
     {

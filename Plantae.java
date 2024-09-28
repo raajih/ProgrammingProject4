@@ -1,4 +1,5 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public class Plantae extends Eukarya{
@@ -6,14 +7,14 @@ public class Plantae extends Eukarya{
 
     /**
      * Constructs a plantae object by calling eukarya's constructor first
-     * @param division name of division
-     * @param className name of class
-     * @param order name of order
-     * @param family name of family
-     * @param genus name of genus
-     * @param species name of species
-     * @param organismName name of the organism
-     * @param isExtinct whether or not organism is extinct
+     * @param division Name of division.
+     * @param className Name of class.
+     * @param order Name of order.
+     * @param family Name of family.
+     * @param genus Name of genus.
+     * @param species Name of species.
+     * @param organismName Name of the organism.
+     * @param isExtinct Whether or not organism is extinct.
      */
     public Plantae (String division, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct)
     {
@@ -22,14 +23,14 @@ public class Plantae extends Eukarya{
     }
 
     /**
-     * getter for division
+     * Getter for division
      * @return division
      */
     public String getDivision()
     { return division; }
 
     /**
-     * setter for division
+     * Setter for division
      * @param division
      */
     public void setDivision(String division)

@@ -1,20 +1,21 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public class Aardvark extends Animalia implements CanEatAnt{
     private String habitat;
 
     /**
-     * Calls superclass's constructor and initializes habitat
-     * @param phylum name of phylum
-     * @param className name of class
-     * @param order name of order
-     * @param family name of family
-     * @param genus name of genus
-     * @param species name of species
-     * @param organismName name of organism
-     * @param isExtinct true if extinct, false if not
-     * @param habitat name of habitat aardvark lives in
+     * Calls superclass's constructor and initializes habitat.
+     * @param phylum Name of aardvark phylum
+     * @param className Name of aardvark class.
+     * @param order Name of aardvark order.
+     * @param family Name of aardvark family.
+     * @param genus Name of aardvark genus.
+     * @param species Name of aardvark species.
+     * @param organismName Name of aardvark organism.
+     * @param isExtinct True if  aardvark is extinct, false if not.
+     * @param habitat Name of habitat aardvark lives in.
      */
     public Aardvark(String phylum, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct, String habitat)
     {
@@ -23,22 +24,22 @@ public class Aardvark extends Animalia implements CanEatAnt{
     }
 
     /**
-     * getter for habitat
-     * @return habitat
+     * Getter for habitat.
+     * @return Habitat for aardvark.
      */
     public String getHabitat()
     { return habitat; }
 
     /**
-     * setter for habitat
+     * Setter for habitat.
      * @param habitat
      */
     public void setHabitat(String habitat)
     { this.habitat = habitat;}
 
     /**
-     * outputs all attributes as a string
-     * @return output
+     * Outputs all attributes as a string.
+     * @return output, a string of all aardvark attributes.
      */
     public String toString()
     {
@@ -49,9 +50,9 @@ public class Aardvark extends Animalia implements CanEatAnt{
     }
 
     /**
-     * method for aardvark to eat ant
+     * Method for aardvark to eat ant.
      * @Override
-     * @param ant to be eaten
+     * @param ant to be eaten.
      */
     public String eatAnt(Ant ant)
     {

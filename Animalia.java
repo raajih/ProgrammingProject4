@@ -1,4 +1,5 @@
 //Raajih Roland
+//Programming Project 4
 //9/25/2024
 
 public class Animalia extends Eukarya {
@@ -6,14 +7,14 @@ public class Animalia extends Eukarya {
 
     /**
      * Calls the superclass constructor first then adds in the phylum
-     * @param phylum name of phylum
-     * @param className name of class
-     * @param order name of order
-     * @param family name of family
-     * @param genus name of genus
-     * @param species name of species
-     * @param organismName name of organism
-     * @param isExtinct whether or not it is extinct
+     * @param phylum Name of phylum.
+     * @param className Name of class.
+     * @param order Name of order.
+     * @param family Name of family.
+     * @param genus Name of genus.
+     * @param species Name of species.
+     * @param organismName Name of organism.
+     * @param isExtinct Whether or not organism. is extinct.
      */
     public Animalia (String phylum, String className, String order, String family, String genus, String species, String organismName, boolean isExtinct)
     {
@@ -22,22 +23,22 @@ public class Animalia extends Eukarya {
     }
 
     /**
-     * getter for phylum
-     * @return phylum
+     * Getter for phylum.
+     * @return phylum of organism.
      */
     public String getPhylum()
     { return phylum; }
 
     /**
-     * setter for phylum
+     * Setter for phylum.
      * @param phylum
      */
     public void setPhylum(String phylum)
     { this.phylum = phylum; }
 
     /**
-     * outputs all attributes as a string
-     * @return output
+     * Outputs all attributes as a string.
+     * @return output.
      */
     public String toString()
     {
